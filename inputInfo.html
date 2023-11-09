@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Input Information</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="yolo.js"></script>
+    </head>
+    <body>
+        <form action="display.html">            
+            <h1>Enter Information</h1>
+            <div id="perInfo">
+                <h3>Personal Information</h3>
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                <br><br>
+                <label>Email:</label>    
+                <input type="email" id="emailId" required>
+            </div><hr>
+            <div id="acadInfo">
+                <h3>Academic Information</h3>
+                <label>College Name:</label>
+                <input id="collegeName" required>
+                <br>
+                <label>Educaional Qualification:</label>
+                <input id="qualification" required>
+            </div><hr>
+            <div id="profInfo">
+                <h3>Professional Information</h3>
+                <label>Working As:</label><br>
+                <input type="text" id="workingAs" required>
+            </div><hr>
+            <div style="padding-left: 30; padding-bottom: 5;">
+                <h3 style="padding-left: 0%;">Future Plans</h3>
+                <label style="padding-left: 0%;">Future Plans:</label><br>
+                <textarea id="futurePlans" required></textarea>
+            </div><hr>
+            <div style="padding-left: 30; padding-top: 5;">
+                <input id = "submitButton" type="submit" value="Submit" onclick="displayInfo()">
+            </div>
+        </form>
+    </body>
+</html>
